@@ -45,15 +45,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheBlackXYZBotz')
+            InlineKeyboardButton('🍿 Movies Group 🍿', url='https://t.me/codexmoviesgroup')
             ],[
-            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/The_Black_XYZ_SupportChat'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheBlackXYZ')
+            InlineKeyboardButton('🔮 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔮', url='https://t.me/codexdisscus'),
+            InlineKeyboardButton('🪆 Bots Updates 🪆', url='https://t.me/codexbotmaker')
             ],[
-            InlineKeyboardButton('🤖 ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
+            InlineKeyboardButton('🧬 ᴄʟᴏɴᴇ own ʙᴏᴛ 🧬', callback_data='clone')
             ],[
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🌪️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🪄 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         me2 = (await client.get_me()).mention
@@ -64,12 +64,12 @@ async def start(client, message):
         )
         return
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     data = message.command[1]
@@ -106,7 +106,7 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis File will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward it to your Saved Messages and Start Download/Watch Online there</b>")
+                h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\n🎗️This File will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward it to your Saved Messages and Start Download/Watch Online there</b>")
                 k = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
@@ -132,19 +132,19 @@ async def start(client, message):
         await sts.delete()
         return
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     elif data.split("-", 1)[0] == "DSTORE":
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
-        await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
+        await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\n🎗️This Movie File/Video will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
                
         try:
             f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
@@ -166,7 +166,7 @@ async def start(client, message):
                     file_name = getattr(media, 'file_name', '')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
-                    h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis File will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward it to your Saved Messages and Start Download/Watch Online there</b>")
+                    h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\n🎗️This File will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🙃 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward it to your Saved Messages and Start Download/Watch Online there</b>")
                     k = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
                     
                     asyncio.create_task(delete_after_delay(k, AUTO_DELETE_TIME))
@@ -191,12 +191,12 @@ async def start(client, message):
             await asyncio.sleep(1) 
         return await sts.delete()
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
     files_ = await get_file_details(file_id)           
@@ -221,33 +221,33 @@ async def start(client, message):
             
             await msg.edit_caption(f_caption)
             g = await msg.reply_text(
-                text=f"**•• ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴏɴʟɪɴᴇ sᴛʀᴇᴀᴍ ʟɪɴᴋ ᴏғ ʏᴏᴜʀ ғɪʟᴇ ᴀɴᴅ ᴀʟsᴏ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ғɪʟᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇**",
+                text=f"**•• 🫧ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴏɴʟɪɴᴇ sᴛʀᴇᴀᴍ ʟɪɴᴋ ᴏғ ʏᴏᴜʀ ғɪʟᴇ ᴀɴᴅ ᴀʟsᴏ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ғɪʟᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇**",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')
+                         InlineKeyboardButton('🌪️ Fast Download / Watch Online💦', callback_data=f'generate_stream_link:{file_id}')
                      ]
                     ]
                 )
             )
-            k = await msg.reply(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis File will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward it to your Saved Messages and Start Download/Watch Online there</i></b>",quote=True)
+            k = await msg.reply(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\n🎗️This File will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward it to your Saved Messages and Start Download/Watch Online there</i></b>",quote=True)
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await g.delete()
-            await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
+            await k.edit_text("<b>☺️Your File/Video is successfully deleted!!!</b>")
             return
         except:
             pass
         return await message.reply('No such file exist.')
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     files = files_[0]
@@ -269,14 +269,13 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         )
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
-
 @Client.on_message(filters.command('api') & filters.private)
 async def shortener_api_handler(client, m: Message):
     user_id = m.from_user.id
@@ -290,14 +289,14 @@ async def shortener_api_handler(client, m: Message):
     elif len(cmd) == 2:    
         api = cmd[1].strip()
         await update_user_info(user_id, {"shortener_api": api})
-        await m.reply("<b>Shortener API updated successfully to</b> " + api)
+        await m.reply("<b>💲Shortener API updated successfully to</b> " + api)
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 @Client.on_message(filters.command("base_site") & filters.private)
@@ -313,14 +312,14 @@ async def base_site_handler(client, m: Message):
         if not domain(base_site):
             return await m.reply(text=text, disable_web_page_preview=True)
         await update_user_info(user_id, {"base_site": base_site})
-        await m.reply("<b>Base Site updated successfully</b>")
+        await m.reply("<b>👻Base Site updated successfully</b>")
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 @Client.on_callback_query()
@@ -330,7 +329,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🎋 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -345,25 +344,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝 ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheBlackXYZBotz')
+            InlineKeyboardButton('🍿 Movies Group 🍿', url='https://t.me/codexmoviesgroup')
             ],[
-            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/The_Black_XYZ_SupportChat'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheBlackXYZ')
+            InlineKeyboardButton('🔮 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔮', url='https://t.me/codexdisscus'),
+            InlineKeyboardButton('🪆 Bots Updates 🪆', url='https://t.me/codexbotmaker')
             ],[
-            InlineKeyboardButton('🤖 ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
+            InlineKeyboardButton('🧬 clone ᴏᴡɴ ʙᴏᴛ 🧬', callback_data='clone')
             ],[
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🌪️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🪄 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -379,18 +378,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     elif query.data == "clone":
         buttons = [[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🎋 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -404,18 +403,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )          
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🎋 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -429,12 +428,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )  
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
     elif query.data.startswith("generate_stream_link"):
@@ -455,37 +454,37 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await asyncio.sleep(1)
             await xo.delete()
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
             
             await log_msg.reply_text(
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🌪️ Fast Download 🌪️", url=download),  # we download Link
+                                                    InlineKeyboardButton('💦 Watch online 💦', url=stream)]])  # web stream Link
             )
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🌪️ Fast Download 🌪️", url=download),  # we download Link
+                                                    InlineKeyboardButton('💦 Watch online 💦', url=stream)]])  # web stream Link
             )
         except Exception as e:
             print(e)  # print the error message
             await query.answer(f"☣something went wrong\n\n{e}", show_alert=True)
             return
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏

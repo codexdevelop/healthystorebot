@@ -4,16 +4,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=Y70000&lines=Welcome+To+TheBlackXYZBotz;I+Am+Teligram+Bot+Developerr+;This+Is+FileStore+Bot;Multiple+Features+Subscribe+TheBlackXYZ+On+YouTube;Please+Star+and+Fork+My+Repos)](https://git.io/typing-svg) 
 </h1>
 
-<h1 align="center">
-  
-[![Stars](https://img.shields.io/github/stars/TheBlackxyz/TheBlackXYZ-Bot?style=flat-square&color=yellow)](https://github.com/TheBlackxyz/TheBlackXYZFileStore/stargazers)
-[![Forks](https://img.shields.io/github/forks/TheBlackxyz/TheBlackXYZFileStore?style=flat-square&color=orange)](https://github.com/TheBlackxyz/TheBlackXYZFileStore/fork)
-[![Size](https://img.shields.io/github/repo-size/TheBlackxyz/TheBlackXYZFileStore?style=flat-square&color=green)](https://github.com/TheBlackxyz/TheBlackXYZFileStore)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TheBlackxyz/TheBlackXYZFileStore)   
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://stars.medv.io/TheBlackxyz/TheBlackXYZFileStore/blob/main/LICENSE)
-</h1>
-
-
 <p align="center">
   <img src="https://graph.org/file/9d01abe8f3018a91476ac.jpg" alt="TheBlackXYZFileStore Logo">
 </p>

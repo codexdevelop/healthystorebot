@@ -1,9 +1,9 @@
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 import asyncio

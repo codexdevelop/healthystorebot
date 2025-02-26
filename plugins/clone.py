@@ -33,11 +33,11 @@ async def on_clone(client, message):
 
         forward_from_id = message.forward_from.id if message.forward_from else None
         if bot_tokens == bot_token and forward_from_id == 93372553:
-            await message.reply_text("**©️ ᴛʜɪs ʙᴏᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴄʟᴏɴᴇᴅ ʙᴀʙʏ 🐥**")
+            await message.reply_text("**👀 ᴛʜɪs ʙᴏᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴄʟᴏɴᴇᴅ ʙᴀʙʏ 😁**")
             return
 
         if not forward_from_id != 93372553:
-            msg = await message.reply_text("**👨‍💻 ᴡᴀɪᴛ ᴀ ᴍɪɴᴜᴛᴇ ɪ ᴀᴍ ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʙᴏᴛ ❣️**")
+            msg = await message.reply_text("**👻 ᴡᴀɪᴛ ᴀ ᴍɪɴᴜᴛᴇ ɪ ᴀᴍ ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʙᴏᴛ 🧬**")
             try:
                 ai = Client(
                     f"{bot_token}", API_ID, API_HASH,
@@ -56,10 +56,10 @@ async def on_clone(client, message):
                     'username': bot.username
                 }
                 mongo_db.bots.insert_one(details)
-                await msg.edit_text(f"<b>sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʟᴏɴᴇᴅ ʏᴏᴜʀ ʙᴏᴛ: @{bot.username}.\n\nʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ sᴇᴛ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ɪɴ ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ sᴛᴀʀᴛ ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ</b>")
+                await msg.edit_text(f"<b>🥹sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʟᴏɴᴇᴅ ʏᴏᴜʀ ʙᴏᴛ: @{bot.username}.\n\n🎗️ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ sᴇᴛ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ɪɴ ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ sᴛᴀʀᴛ ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ</b>")
             except BaseException as e:
                 logging.exception("Error while cloning bot.")
-                await msg.edit_text(f"⚠️ <b>Bot Error:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @All_mediafiles_provider to get assistance.**")
+                await msg.edit_text(f"😞 <b>Bot Error:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @All_mediafiles_provider to get assistance.**")
     except Exception as e:
         logging.exception("Error while handling message.")
 
@@ -75,12 +75,12 @@ async def delete_cloned_bot(client, message):
         cloned_bot = mongo_collection.find_one({"token": bot_token})
         if cloned_bot:
             mongo_collection.delete_one({"token": bot_token})
-            await message.reply_text("**🤖 ᴛʜᴇ ᴄʟᴏɴᴇᴅ ʙᴏᴛ ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ ᴛʜᴇ ʟɪsᴛ ᴀɴᴅ ɪᴛs ᴅᴇᴛᴀɪʟs ʜᴀᴠᴇ ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ. ☠️**")
+            await message.reply_text("**🌪️ ᴛʜᴇ ᴄʟᴏɴᴇᴅ ʙᴏᴛ ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ ᴛʜᴇ ʟɪsᴛ ᴀɴᴅ ɪᴛs ᴅᴇᴛᴀɪʟs ʜᴀᴠᴇ ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ. ☠️**")
         else:
-            await message.reply_text("**⚠️ ᴛʜᴇ ʙᴏᴛ ᴛᴏᴋᴇɴ ᴘʀᴏᴠɪᴅᴇᴅ ɪs ɴᴏᴛ ɪɴ ᴛʜᴇ ᴄʟᴏɴᴇᴅ ʟɪsᴛ.**")
+            await message.reply_text("**😑 ᴛʜᴇ ʙᴏᴛ ᴛᴏᴋᴇɴ ᴘʀᴏᴠɪᴅᴇᴅ ɪs ɴᴏᴛ ɪɴ ᴛʜᴇ ᴄʟᴏɴᴇᴅ ʟɪsᴛ.**")
     except Exception as e:
         logging.exception("Error while deleting cloned bot.")
-        await message.reply_text("An error occurred while deleting the cloned bot.")
+        await message.reply_text("😵‍💫An error occurred while deleting the cloned bot.")
 
 
 async def restart_bots():
@@ -96,5 +96,5 @@ async def restart_bots():
             )
             await ai.start()
         except Exception as e:
-            logging.exception(f"Error while restarting bot with token {bot_token}: {e}")
+            logging.exception(f"😑Error while restarting bot with token {bot_token}: {e}")
 

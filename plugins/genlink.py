@@ -1,9 +1,9 @@
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 import re
@@ -18,42 +18,42 @@ import json
 import base64
 import logging
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 @Client.on_message(filters.command(['link', 'plink']))
 async def gen_link_s(bot, message):
     replied = message.reply_to_message
     if not replied:
-        return await message.reply('Reply to a message to get a shareable link.')
+        return await message.reply('☺️Reply to a message to get a shareable link.')
     file_type = replied.media
     if file_type not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
         return await message.reply("**ʀᴇᴘʟʏ ᴛᴏ ᴀ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ**")
     if message.has_protected_content and message.chat.id not in ADMINS:
         return await message.reply("okDa")
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     file_id, ref = unpack_new_file_id((getattr(replied, file_type.value)).file_id)
@@ -63,25 +63,25 @@ async def gen_link_s(bot, message):
     user_id = message.from_user.id
     user = await get_user(user_id)
     share_link = f"https://t.me/{BOT_USERNAME}?start={outstr}"
-    await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
+    await message.reply(f"<b>👀 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🪄 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
     short_link = await get_short_link(user, share_link)
-    await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
+    await message.reply(f"<b>👀 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🪄 sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
     
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 @Client.on_message(filters.command(['batch', 'pbatch']))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
-        return await message.reply("Use correct format.\nExample /batch https://t.me/Latest_movies/10 https://t.me/Latest_movies/20.")
+        return await message.reply("😑Use correct format.\nExample /batch https://t.me/Latest_movies/10 https://t.me/Latest_movies/20.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("Use correct format.\nExample /batch https://t.me/Latest_movies/10 https://t.me/Latest_movies/20.")
+        return await message.reply("😑Use correct format.\nExample /batch https://t.me/Latest_movies/10 https://t.me/Latest_movies/20.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
@@ -92,12 +92,12 @@ async def gen_link_batch(bot, message):
     if f_chat_id.isnumeric():
         f_chat_id = int(("-100" + f_chat_id))
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
     match = regex.match(last)
@@ -113,42 +113,42 @@ async def gen_link_batch(bot, message):
     try:
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
-        return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
+        return await message.reply('🫠This may be a private channel / group. Make me an admin over there to index the files.')
     except (UsernameInvalid, UsernameNotModified):
         return await message.reply('Invalid Link specified.')
     except Exception as e:
         return await message.reply(f'Errors - {e}')
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     
-    sts = await message.reply("**ɢᴇɴᴇʀᴀᴛɪɴɢ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ**.\n**ᴛʜɪs ᴍᴀʏ ᴛᴀᴋᴇ ᴛɪᴍᴇ ᴅᴇᴘᴇɴᴅɪɴɢ ᴜᴘᴏɴ ɴᴜᴍʙᴇʀ ᴏғ ᴍᴇssᴀɢᴇs**")
+    sts = await message.reply("**☄️ɢᴇɴᴇʀᴀᴛɪɴɢ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ**.\n**ᴛʜɪs ᴍᴀʏ ᴛᴀᴋᴇ ᴛɪᴍᴇ ᴅᴇᴘᴇɴᴅɪɴɢ ᴜᴘᴏɴ ɴᴜᴍʙᴇʀ ᴏғ ᴍᴇssᴀɢᴇs**")
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}_{cmd.lower().strip()}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
         user_id = message.from_user.id
         user = await get_user(user_id)
         share_link = f"https://t.me/{BOT_USERNAME}?start=DSTORE-{b_64}"
-        await sts.edit(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
+        await sts.edit(f"<b>👀 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🪄 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
         short_link = await get_short_link(user, share_link)
-        await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
+        await message.reply(f"<b>👀 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🪄 sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
         return
 
-    FRMT = "**ɢᴇɴᴇʀᴀᴛɪɴɢ ʟɪɴᴋ...**\n**ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs:** {total}\n**ᴅᴏɴᴇ:** {current}\n**ʀᴇᴍᴀɪɴɪɴɢ:** {rem}\n**sᴛᴀᴛᴜs:** {sts}"
+    FRMT = "**💦ɢᴇɴᴇʀᴀᴛɪɴɢ ʟɪɴᴋ...**\n**🌪️ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs:** {total}\n**🎋ᴅᴏɴᴇ:** {current}\n**👀ʀᴇᴍᴀɪɴɪɴɢ:** {rem}\n**✨sᴛᴀᴛᴜs:** {sts}"
 
     outlist = []
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
     # file store without db channel
@@ -176,14 +176,14 @@ async def gen_link_batch(bot, message):
                     "protect": cmd.lower().strip() == "/pbatch",
                 }
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
-
+                
                 og_msg +=1
                 outlist.append(file)
         except:
@@ -201,15 +201,15 @@ async def gen_link_batch(bot, message):
     user_id = message.from_user.id
     user = await get_user(user_id)
     share_link = f"https://t.me/{BOT_USERNAME}?start=BATCH-{file_id}"
-    await sts.edit(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\nContains `{og_msg}` files.\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
+    await sts.edit(f"<b>👀 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\nContains `{og_msg}` files.\n🪄 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
     short_link = await get_short_link(user, share_link)
-    await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
+    await message.reply(f"<b>👀 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🪄 sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 

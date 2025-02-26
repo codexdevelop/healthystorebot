@@ -1,9 +1,9 @@
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 import logging
@@ -16,33 +16,33 @@ from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from config import DB_URI, DB_NAME
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 COLLECTION_NAME = "Telegram_Files"
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 
@@ -50,12 +50,12 @@ client = AsyncIOMotorClient(DB_URI)
 db = client[DB_NAME]
 instance = Instance.from_db(db)
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 @instance.register
@@ -72,12 +72,12 @@ class Media(Document):
         indexes = ('$file_name', )
         collection_name = COLLECTION_NAME
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 
@@ -87,12 +87,12 @@ async def get_file_details(query):
     filedetails = await cursor.to_list(length=1)
     return filedetails
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 
@@ -112,24 +112,24 @@ def encode_file_id(s: bytes) -> str:
 
     return base64.urlsafe_b64encode(r).decode().rstrip("=")
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 
 def encode_file_ref(file_ref: bytes) -> str:
     return base64.urlsafe_b64encode(file_ref).decode().rstrip("=")
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 def unpack_new_file_id(new_file_id):
@@ -148,10 +148,10 @@ def unpack_new_file_id(new_file_id):
     return file_id, file_ref
 
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏

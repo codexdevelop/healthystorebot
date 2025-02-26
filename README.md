@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://graph.org/file/9d01abe8f3018a91476ac.jpg" alt="TheBlackXYZFileStore Logo">
+  <img src="https://media-hosting.imagekit.io//072a7f3f48284e72/giphy.gif?Expires=1835102149&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qLM1Ny6ZmqeGpdacar89tnE2J4AttZNFvHHtYvPhFR4FUBzLfyTWvJER6jUhQfPyi2cGqkdirTvOdxTOuhbOqsEfC68GaNf1OHE91I0rdQh5rJwM9Ru452DXzmM8onQBF4RQP1QM3veX8PUG0lf-s9XX9XNt66skRH4F~J7ukgZeOygFArzI2wq6IX38777iig0H7LD~2BCd13AkNhVZDjNiuA9spILXZTIN~rxxd4xD0bBOMtsEjZppbdAYxpCC2BaFjD8ktNx5-jET6YuassZQF1j8XCEgZ-VPWkPRThQ1EBBqB6sMIPTR2olCs6EMpr9wQMfiIRD8mFrJdAvb7A__" alt="TheBlackXYZFileStore Logo">
 </p>
 <h1 align="center">
   TheBlackXYZ-File-Store-Bot

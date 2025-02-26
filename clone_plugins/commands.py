@@ -42,12 +42,12 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheBlackXYZBotz')
+            InlineKeyboardButton('👻 Bots Channel 👻', url='https://t.me/codexbotmaker')
             ],[
-            InlineKeyboardButton('🤖 ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', url=f'https://t.me/{BOT_USERNAME}?start=clone')
+            InlineKeyboardButton('🧬 Start ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ 🧬', url=f'https://t.me/{BOT_USERNAME}?start=clone')
             ],[
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🔻', callback_data='about')
+            InlineKeyboardButton('🪄 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🎗️', callback_data='about')
         ]]
         me2 = (await client.get_me()).mention
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -86,10 +86,10 @@ async def start(client, message):
                 except:
                     return
             await msg.edit_caption(f_caption)
-            k = await msg.reply(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis File will be deleted in <b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Forward it to your Saved Messages and Start Download/Watch Online there</i></b>",quote=True)
+            k = await msg.reply(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\n🎋This File will be deleted in <b><u>{AUTO_DELETE} mins</u> 😑 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Forward it to your Saved Messages and Start Download/Watch Online there</i></b>",quote=True)
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
-            await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
+            await k.edit_text("<b>☺️Your File/Video is successfully deleted!!!</b>")
             return
         except:
             pass
@@ -148,7 +148,7 @@ async def base_site_handler(client, m: Message):
         await update_user_info(user_id, {"base_site": base_site})
         await m.reply("Base Site updated successfully")
     else:
-        await m.reply("You are not authorized to use this command.")
+        await m.reply("🙃You are not authorized to use this command.")
 
 
 @Client.on_callback_query()
@@ -157,12 +157,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝 ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheBlackXYZBotz')
+            InlineKeyboardButton('👻 Bots Channel 👻', url='https://t.me/codexbotmaker')
             ],[
-            InlineKeyboardButton('🤖 ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', url=f'https://t.me/{BOT_USERNAME}?start=clone')
+            InlineKeyboardButton('🧬 Start ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ 🧬', url=f'https://t.me/{BOT_USERNAME}?start=clone')
             ],[
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🔻', callback_data='about')
+            InlineKeyboardButton('🎋 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ 🎗️', callback_data='about')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -182,7 +182,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🌪️ Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -199,7 +199,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🌪️ Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 

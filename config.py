@@ -7,12 +7,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 
@@ -25,18 +25,18 @@ def is_enabled(value, default):
     else:
         return default
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
       
 # Owner Information
 API_ID = int(environ.get("API_ID", "26626715"))
 API_HASH = environ.get("API_HASH", "967f1c73aa77a29009bc364edd30b525")
-ADMINS = int(environ.get("ADMINS", "7216492043"))
+ADMINS = int(environ.get("ADMINS", "7014391442"))
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://ap8181568:four@cluster4.ojmga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster4")
@@ -44,18 +44,18 @@ CDB_NAME = environ.get("CDB_NAME", "Cluster4")
 DB_URI = environ.get("DB_URI", "mongodb+srv://godlikeadi02:three@cluster3.5q9qt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster3")
 DB_NAME = environ.get("DB_NAME", "Cluster3")
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 # Bot Information
 BOT_TOKEN = environ.get("BOT_TOKEN", "6751281414:AAHD82JheC-ujDJFarjqy0yd633c7uOPPfQ")
 BOT_USERNAME = environ.get("BOT_USERNAME", "panda_files_bot") # your bot username without @
-PICS = (environ.get('PICS', 'https://telegra.ph/file/84b09cfc6223afcd75393.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://media-hosting.imagekit.io//cf953b679ef1474d/giphy%20(1).gif?Expires=1835193163&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=d4Wd-3B6c4Fq-HCxEom76S4DQ6VGpSG9ZxRF3hbTWDqawjRF1Fr8HkvYpyMrZmvDPkwn6Vz1dLASkqDyrc2koxynEo9lLAjjsfhgjy-OwMw6JZVoNGIYaV6vnH85LbJnacbO1V-tpfEIfZHMs65Yr4y~So-GoDFLmEnbGD0ZG7ySWM42kmilbYz9pV8SP9lfr3neqEtsglOA~OmWDwRJn95-FQJip715lTWz0os4iPpTE0pj3cAm3dbgedI5Gbf~DDlntNRTVFnyWB-6CMm8sA~BBV05YykjgSiwr6OZtz6qQqpU7Kh3zBGqJRWNXCH~1eeS3t6VFPlYE347ITlDvw__')).split() # Bot Start Picture
 
 # Auto Delete Information
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "5")) # Time in Minutes
@@ -65,12 +65,12 @@ AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "300")) # Time in Seconds
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002318738273"))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002311834360')).split()]
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 # File Caption Information
@@ -81,12 +81,12 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
 
 # File Stream Config
@@ -116,11 +116,11 @@ class Var(object):
 
 
 
-# Credit @TheBlackXYZ.
+# Credit @Codexownerr.
 # Please Don't remove credit.
-# TheBlackXYZBotz Forever !
+# Codexownerr Forever !
 # Thanks You For Help Us In This Amazing Creativity 
-# Thanks You For Giving Me Credit @TheBlackXYZBotz
-# For Any ERROR Please Contact Me -> Telegram ->@TheBlackXYZBotz & Insta @TheBlackXYZ
+# Thanks You For Giving Me Credit @Codexownerr
+# For Any ERROR Please Contact Me -> Telegram ->@codexbotmaker & Insta @Codexownerr
 # Please Love & Support 💗💗🙏
     

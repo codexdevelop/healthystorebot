@@ -39,10 +39,10 @@ API_HASH = environ.get("API_HASH", "967f1c73aa77a29009bc364edd30b525")
 ADMINS = int(environ.get("ADMINS", "7216492043"))
 
 # Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://cdbpandafile:cdbpandafile@cdbpandafile.vmtpr6u.mongodb.net/?retryWrites=true&w=majority&appName=CDBPandaFile")
-CDB_NAME = environ.get("CDB_NAME", "CDBPandaFile")
-DB_URI = environ.get("DB_URI", "mongodb+srv://dbpandafile:dbpandafile@dbpanda.jzibnmg.mongodb.net/?retryWrites=true&w=majority&appName=DBPanda")
-DB_NAME = environ.get("DB_NAME", "DBPanda")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://ap8181568:four@cluster4.ojmga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster4")
+CDB_NAME = environ.get("CDB_NAME", "Cluster4")
+DB_URI = environ.get("DB_URI", "mongodb+srv://godlikeadi02:three@cluster3.5q9qt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster3")
+DB_NAME = environ.get("DB_NAME", "Cluster3")
 
 # Credit @TheBlackXYZ.
 # Please Don't remove credit.
@@ -62,8 +62,8 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "5")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "300")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002187486541"))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002051659577')).split()]
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002318738273"))
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002311834360')).split()]
 
 # Credit @TheBlackXYZ.
 # Please Don't remove credit.

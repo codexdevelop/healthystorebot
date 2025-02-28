@@ -8,8 +8,16 @@
 
 
 class script(object):
-    START_TXT = """<b>👋Hᴇʟʟᴏ {}.\n\n🌪️I am {}.\n\n🧬A Latest Advanced File Store Bot with ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ +sᴛʀᴇᴀᴍ / ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴇᴀᴛᴜʀᴇ + ᴄᴜꜱᴛᴏᴍ ᴜʀʟ ꜱʜᴏʀᴛɴᴇʀ ꜱᴜᴘᴘᴏʀᴛ + ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ sᴜᴘᴘᴏʀᴛ with best UI support</b>"""
-
+    START_TXT = """<b>👋 Hello {}</b>\n\n
+🌪️ I am <b>{}</b>\n
+🧬 A Latest Advanced File Store Bot\n\n
+🎗️ <b>Features</b>\n\n
+1. 🧬 Clone your own bot\n
+2. 🌪️ Stream / Download link feature\n
+💞 Custom URL shortener support\n
+❄️ Auto delete support with best UI support\n\n
+🧞 Maintained by: <b>@codexbotmaker</b>"""
+    
 # Credit @Codexownerr.
 # Please Don't remove credit.
 # Codexownerr Forever !
@@ -22,7 +30,7 @@ class script(object):
     CAPTION = """<b>🪄 Maintained BY: @codexbotmaker ⚜️
 🫧 ғɪʟᴇɴᴀᴍᴇ : {file_name}
 
-sɪᴢᴇ ⚙️: {file_size}
+sɪᴢᴇ 😏: {file_size}
 
 ⚡ Bots Updates @codexbotmaker </b>""" 
 
@@ -36,11 +44,11 @@ sɪᴢᴇ ⚙️: {file_size}
 
     SHORTENER_API_MESSAGE = """<b>🎋Tᴏ ᴀᴅᴅ ᴏʀ ᴜᴘᴅᴀᴛᴇ ʏᴏᴜʀ Sʜᴏʀᴛɴᴇʀ Wᴇʙsɪᴛᴇ API, /api (ᴀᴘɪ)
             
-<b>Ex: /api 𝟼LZǫ𝟾𝟻𝟷sXᴏғғғPHᴜɢɪKQǫ
+<b>🌹Ex: /api 𝟼LZǫ𝟾𝟻𝟷sXᴏғғғPHᴜɢɪKQǫ
 
-<b>Cᴜʀʀᴇɴᴛ Wᴇʙsɪᴛᴇ: {base_site}
+<b>🧞Cᴜʀʀᴇɴᴛ Wᴇʙsɪᴛᴇ: {base_site}
 
-Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`"""
+🧬Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`"""
 
 # Credit @Codexownerr.
 # Please Don't remove credit.
@@ -117,16 +125,20 @@ ___________________________________________________
 🌪️ /link - ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠɪᴅᴇᴏ ᴏʀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ sʜᴀʀᴀʙʟᴇ ʟɪɴᴋ
 
 ⚡ /batch - sᴇɴᴅ ғɪʀsᴛ ʟɪɴᴋ ᴏғ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ ᴘᴏsᴛ ᴛʜᴇɴ ʟᴀsᴛ ᴘᴏsᴛ ʟɪɴᴋ ᴀɴᴅ ᴍᴀᴋᴇ sᴜʀᴇ ʙᴏᴛ ɪs ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ.
-ᴇx - /batch https://t.me/TheBlackXYZ/25 https://t.me/TheBlackXYZ/30
+
+🌹ᴇx - /batch https://t.me/TheBlackXYZ/25 https://t.me/TheBlackXYZ/30
 
 ❄️ /base_site - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ sᴇᴛ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ʟɪɴᴋ ᴅᴏᴍᴀɪɴ
 
 🌹ᴇx - /base_site ʏᴏᴜʀᴅᴏᴍᴀɪɴ.ᴄᴏᴍ
 
 💞 /api - sᴇᴛ ʏᴏᴜʀ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀᴄᴄᴏᴜɴᴛ ᴀᴘɪ 
-ᴇx - /api ʙᴀᴏᴡɢᴡᴋʟᴀᴀʙᴀᴋʟ
 
-🧬 /deletecloned - ᴜsᴇ ᴛʜɪs ғᴏʀ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄʟᴏɴᴇ ʙᴏᴛ 
+🌹ᴇx - /api ʙᴀᴏᴡɢᴡᴋʟᴀᴀʙᴀᴋʟ
+
+🧬 /clone - Use this command for make your own bot.
+
+🧬 /deletecloned - ᴜsᴇ ᴛʜɪs command ғᴏʀ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄʟᴏɴᴇ ʙᴏᴛ 
 
 🌹ᴇx - /deletecloned ʏᴏᴜʀʙᴏᴛᴛᴏᴋᴇɴ
 

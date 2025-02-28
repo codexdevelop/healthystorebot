@@ -34,8 +34,8 @@ def is_enabled(value, default):
 # Please Love & Support 💗💗🙏
       
 # Owner Information
-API_ID = int(environ.get("API_ID", "26626715"))
-API_HASH = environ.get("API_HASH", "967f1c73aa77a29009bc364edd30b525")
+API_ID = int(environ.get("API_ID", "21994822"))
+API_HASH = environ.get("API_HASH", "3d2430972bb360876864a636f0f06015")
 ADMINS = int(environ.get("ADMINS", "7014391442"))
 
 # Database Information
@@ -54,7 +54,7 @@ DB_NAME = environ.get("DB_NAME", "Cluster3")
 
 # Bot Information
 BOT_TOKEN = environ.get("BOT_TOKEN", "6751281414:AAHD82JheC-ujDJFarjqy0yd633c7uOPPfQ")
-BOT_USERNAME = environ.get("BOT_USERNAME", "panda_files_bot") # your bot username without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "filestro_bot") # your bot username without @
 PICS = (environ.get('PICS', 'https://media-hosting.imagekit.io//cf953b679ef1474d/giphy%20(1).gif?Expires=1835193163&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=d4Wd-3B6c4Fq-HCxEom76S4DQ6VGpSG9ZxRF3hbTWDqawjRF1Fr8HkvYpyMrZmvDPkwn6Vz1dLASkqDyrc2koxynEo9lLAjjsfhgjy-OwMw6JZVoNGIYaV6vnH85LbJnacbO1V-tpfEIfZHMs65Yr4y~So-GoDFLmEnbGD0ZG7ySWM42kmilbYz9pV8SP9lfr3neqEtsglOA~OmWDwRJn95-FQJip715lTWz0os4iPpTE0pj3cAm3dbgedI5Gbf~DDlntNRTVFnyWB-6CMm8sA~BBV05YykjgSiwr6OZtz6qQqpU7Kh3zBGqJRWNXCH~1eeS3t6VFPlYE347ITlDvw__')).split() # Bot Start Picture
 
 # Auto Delete Information
